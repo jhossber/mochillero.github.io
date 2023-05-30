@@ -1,0 +1,40 @@
+
+#blog h3, h4{
+    text-align: center;
+}
+
+#blog h3{
+    float: none;
+}
+
+#blog .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    /*cuando un elemento no encaja*/
+}
+
+#blog article {
+    margin: 15px;
+}
+
+#blog img{
+    width: 100%;
+    max-width: 280px;
+    
+    border-radius: 10px 10px;
+    border: 3px solid #030303;
+}
+
+
+@media (min-width:768px){
+    #blog img{
+        width: 300px;
+        height: 300px;
+        max-width: 300px;
+        background-size:contain;
+
+        border-radius: 10px 10px;
+        border: 3px solid #030303;
+    }
+}

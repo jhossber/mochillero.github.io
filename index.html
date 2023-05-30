@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/3.png" type="image/png">
+    <title>Mochilero</title>
+</head>
+<body>
+    <header>
+        
+        <div class="contenedor">
+            <h1 class="icon-camera">Mochilero</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+            
+            <nav class="menu">
+                <a href="#banner">Inicio</a>
+                <a href="#bienvenidos">Nosotros</a>
+                <a href="#blog">Recorrido</a>
+                <a href="#info">Contactos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="banner">
+            <img src="img/banner.jpg">
+            <div class="contenedor">
+                <h2>Viaja sin limites</h2>
+                <p>Cansado de seguir en su rutina</p>
+                <a href="#">Lee mas</a>
+            </div>  
+        </section>
+
+        <section id="bienvenidos">
+            <h2>Bienvenidos a Lugar de Viaje</h2>
+            <div class="contenedor">
+                    <img src="img/banner1.jpg">
+                    
+                    <p>
+                            ¿Eres un viajero mochilero? Pues esta es tu web, donde encontrar los mejores destinos 
+                            mochileros y donde ver las rutas que otros mochileros viajeros han hecho. Con toda la 
+                            información de cada destino. Que sitios visitar, donde comer bueno bonito y barato. Los 
+                            lugares y monumentos más característicos que visitar, cuáles son los mejores consejos de 
+                            viaje y cómo seleccionar tu destino mochilero (backpackers).
+                    </p>
+            </div>
+        </section><br><br><br><br>
+
+        <section id="blog">
+            <h3>¿Aún no sabes a dónde viajar en este año y necesitas un poco de inspiración con tus amigos? </h3><br>
+            <div class="contenedor">
+                <article>
+                    <img src="img/lp.jpg">
+                    <h4>La Paz</h4>
+                </article>
+                <article>
+                    <img src="img/stz.jpg">
+                    <h4>Santa Cruz</h4>
+                </article>
+                <article>
+                    <img src="img/beni.jpg">
+                    <h4>Beni</h4>
+                </article>
+                <article>
+                    <img src="img/cocha.jpg">
+                    <h4>Cochabamba</h4>
+                </article>
+                <article>
+                    <img src="img/tarija.jpg">
+                    <h4>Tarija</h4>
+                </article>
+                <article>
+                    <img src="img/salar.jpg">
+                    <h4>Potosi</h4>
+                </article>
+                <article>
+                    <img src="img/oruro.jpg">
+                    <h4>Oruro</h4>
+                </article>
+                <article>
+                    <img src="img/sucre.jpg">
+                    <h4>Chuquisaca</h4>
+                </article>
+                <article>
+                        <img src="img/pando.jpg">
+                        <h4>Pando</h4>
+                    </article>
+                    
+            </div>
+        </section><br><br>
+
+        <section id="info">
+            <h3>El mundo es un libro y aquellos que no viajan sólo leen una página</h3>
+            <div class="contenedor">
+                <div class="info-pet">
+                    <img src="img/hotel.jpg" alt="">
+                    <h4>Hotel Sal de Luna</h4>
+                </div>
+                <div class="info-pet">
+                    <img src="img/tren.jpg" alt="">
+                    <h4>Turismo en Tren por Bolivia</h4>
+                </div>
+                <div class="info-pet">
+                    <img src="img/tam.jpg" alt="">
+                    <h4>Transporte Aero Militar</h4>
+                </div>
+                <div class="info-pet">
+                    <img src="img/trans.jpg" alt="">
+                    <h4>Transporte Turismo Bolivia</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p class="copy">Mochilero &copy; 2018 - By JosBer YCh</p>
+            <div class="sociales">
+                <a class="icon-facebook-squared" href="#"></a>
+                <a class="icon-instagram-filled" href="#"></a>
+                <a class="icon-twitter" href="#"></a>
+                <a class="icon-instagram-filled" href="#"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
+type="text/javascript" charset="utf-8"></script>
+
+    <script>
+        $(function(){
+
+$('a[href*=#]').click(function() {
+
+if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+
+        var $target = $(this.hash);
+
+        $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+        if ($target.length) {
+
+            var targetOffset = $target.offset().top;
+
+            $('html,body').animate({scrollTop: targetOffset}, 1000);
+
+            return false;
+
+       }
+
+  }
+
+});
+
+});
+    </script>
+</body>
+</html>
